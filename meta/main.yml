@@ -1,0 +1,21 @@
+galaxy_info:
+  author: Sébastien Elet
+  role_name: "google_logging"
+  description: Google logging
+  company: SimpliField
+  license: BSD
+  min_ansible_version: 2.4
+  platforms:
+   - name: Ubuntu
+     versions:
+     - trusty
+     - xenial
+     - bionic
+  galaxy_tags:
+    - google
+    - auth
+    - stackdriver
+    - logging
+    - fluentd
+dependencies:
+- role: SimpliField.google_auth
