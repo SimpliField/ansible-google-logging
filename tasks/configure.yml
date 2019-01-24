@@ -1,0 +1,6 @@
+---
+- name: create configuration files
+  template:
+    src: config.conf.j2
+    dest: /etc/google-fluentd/config.d/{{ item }}.conf
+  with_items: "{{ google_logging_configs.keys() | list }}"

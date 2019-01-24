@@ -1,0 +1,12 @@
+#{{ ansible_managed }}
+
+{% for configs in google_logging_configs[item] %}
+{% for def, content in configs.items() %}
+<{{def}}>
+{% for key, value in content.items() %}
+  {{ key }} {{ value }}
+{% endfor %}
+</{{def}}>
+{% endfor %}
+{% endfor %}
+

@@ -1,0 +1,9 @@
+---
+- import_tasks: install.yml
+  tags: 
+   - google
+   - logging
+- import_tasks: configure.yml
+  tags: 
+   - google
+   - logging
