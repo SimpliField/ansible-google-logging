@@ -1,0 +1,5 @@
+---
+- name: restart google-logging
+  service:
+    name: "google-fluentd"
+    state: restarted
